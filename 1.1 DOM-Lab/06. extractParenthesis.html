@@ -1,0 +1,29 @@
+<!--Write a JS function that when executed, extracts all parenthesized text from a target paragraph by given element ID. The result is a string, joined by "; " (semicolon, space).-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extract Parenthesis</title>
+</head>
+<body>
+    <p id="content">
+        Rakiya (Bulgarian brandy)is home made liquor (alchoholic drink). It can be made of grapes, plums or other fruits (even apples).
+    </p>
+    <script>
+        function extract(content){
+        let element = document.getElementById('content').textContent;
+        let pattern = /\(([^)]+)\)/g;
+        let result = [];
+
+        while(match = pattern.exec(element)){
+            result.push(match[1]);
+        }
+
+        return result.join('; ');
+    }
+
+    console.log(extract('content'));
+    </script>
+</body>
+</html>
