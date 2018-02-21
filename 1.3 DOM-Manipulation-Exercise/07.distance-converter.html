@@ -1,0 +1,44 @@
+<!--Your task is to convert from one distance unit to another by adding a click event listener to a button. When it is clicked, read the value in the input field, get the selected option from the input and output units drop downs and calculate and display the converted value in the disabled output field.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="07.distance-converter.css">
+    <title>Distance Converter</title>
+    <script src="07.distanceConverter.js"></script>
+
+</head>
+<body onload="attachEventsListeners()">
+<h1>Distance Converter</h1>
+<div>
+    <label for="inputDistance">From:</label>
+    <input type="text" id="inputDistance">
+    <select id="inputUnits">
+        <option value="km">Kilometers</option>
+        <option value="m">Meters</option>
+        <option value="cm">Centimeters</option>
+        <option value="mm">Millimeters</option>
+        <option value="mi">Miles</option>
+        <option value="yrd">Yards</option>
+        <option value="ft">Feet</option>
+        <option value="in">Inches</option>
+    </select>
+    <input type="button" id="convert" value="Convert">
+</div>
+<div>
+    <label for="outputDistance">To:</label>
+    <input type="text" id="outputDistance" disabled="disabled">
+    <select id="outputUnits">
+        <option value="km">Kilometers</option>
+        <option value="m">Meters</option>
+        <option value="cm">Centimeters</option>
+        <option value="mm">Millimeters</option>
+        <option value="mi">Miles</option>
+        <option value="yrd">Yards</option>
+        <option value="ft">Feet</option>
+        <option value="in">Inches</option>
+    </select>
+</div>
+</body>
+</html>
