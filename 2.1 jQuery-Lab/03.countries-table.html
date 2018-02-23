@@ -1,0 +1,33 @@
+<!--You are given and HTML table holding countries and their capitals. You need to implement a [Create] link to create a new country and for each existing country implement [Up], [Down] and [Delete] links to manipulate its position in the table.
+The table needs to have the following entries when it’s initialized (add them when your functions starts):
+Bulgaria, Sofia
+Germany, Berlin
+Russia, Moscow -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countries Table</title>
+    <style>
+        td, th { background: #DDD; padding: 5px 10px }
+        input[type='text'] { width: 60px }
+    </style>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="03.countriesTable.js"></script>
+</head>
+<body>
+<table id="countriesTable">
+    <tr>
+        <th>Country</th>
+        <th>Capital</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="newCountryText" /></td>
+        <td><input type="text" id="newCapitalText" /></td>
+        <td><a href="#" id="createLink">[Create]</a></td>
+    </tr>
+</table>
+<script>$(() => initializeTable())</script>
+</body>
+</html>

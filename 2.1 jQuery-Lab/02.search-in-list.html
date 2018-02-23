@@ -1,0 +1,22 @@
+<!--An HTML page holds a list of towns, a search box and a [Search] button. Implement the search function to bold the items from the list which include the text from the search box. Also print the amount of items the current search matches in the format "<matches> matches found."-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search in List</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="02.search.js"></script>
+</head>
+<body>
+<ul id="towns">
+    <li>Sofia</li>
+    <li>Pleven</li>
+    <li>Varna</li>
+    <li>Plovdiv</li>
+</ul>
+<input type="text" id="searchText" />
+<button onclick="search()">Search</button>
+<div id="result"></div>
+</body>
+</html>
