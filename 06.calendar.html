@@ -1,0 +1,22 @@
+<!--Write a program that generates a monthly calendar by given date. It should be formatted as an HTML table with a caption for the month and year and headings for each column for the days of the week. The current date must be highlighted with a different style than the rest of the table cells.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="06.calendar.css">
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="content">
+</div>
+<script src="06.calendar.js"></script>
+<script>
+    window.onload = function(){
+        calendar([15,1,2017]);
+    }
+</script>
+</body>
+</html>
+
